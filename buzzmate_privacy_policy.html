@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuzzMate Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for BuzzMate, a social travel and chatting app." />
+
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --card: #ffffff;
+      --dark: #111827;
+      --text: #111827;
+      --muted: #4b5563;
+      --soft: #6b7280;
+      --border: #e5e7eb;
+      --soft-border: #eef2f7;
+      --accent: #ffd42c;
+      --accent-soft: #fff8d6;
+      --accent-border: #fde68a;
+      --shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 212, 44, 0.18), transparent 34%),
+        linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 30px 18px 64px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      border-radius: 22px;
+      padding: 14px 16px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-subtitle {
+      color: var(--soft);
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: -2px;
+    }
+
+    .topbar-mail {
+      background: var(--dark);
+      color: #ffffff;
+      border-radius: 999px;
+      padding: 11px 15px;
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(255, 212, 44, 0.26), transparent 34%),
+        linear-gradient(135deg, #111827 0%, #1f2937 52%, #111827 100%);
+      border-radius: 28px;
+      padding: 40px;
+      color: #ffffff;
+      box-shadow: 0 24px 60px rgba(17, 24, 39, 0.2);
+      margin-bottom: 22px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      bottom: -90px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 34px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 34px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 20px;
+      background: var(--accent);
+      color: var(--dark);
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    .hero-badge {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.04;
+      letter-spacing: -1.8px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-text {
+      max-width: 820px;
+      color: #d1d5db;
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .trust-chip {
+      background: var(--accent);
+      color: var(--dark);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .operator-card,
+    .section,
+    .contact-panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .operator-card {
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .operator-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .operator-title {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 3px;
+    }
+
+    .operator-subtitle {
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .operator-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      display: grid;
+      place-items: center;
+      font-size: 23px;
+      flex-shrink: 0;
+    }
+
+    .operator-box {
+      background: #f9fafb;
+      border: 1px solid var(--soft-border);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .operator-row {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 14px;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--soft-border);
+    }
+
+    .operator-row:last-child {
+      border-bottom: none;
+    }
+
+    .operator-label {
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .operator-value {
+      color: var(--text);
+      font-size: 14.5px;
+      font-weight: 900;
+      word-break: break-word;
+    }
+
+    .section {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 18px;
+    }
+
+    .section-number {
+      min-width: 48px;
+      height: 36px;
+      border-radius: 12px;
+      background: var(--dark);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      padding: 0 10px;
+      font-size: 13px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      flex: 1;
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -0.45px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15.7px;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .info-card {
+      background: #f9fafb;
+      border: 1px solid var(--soft-border);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .info-card strong {
+      display: block;
+      color: var(--text);
+      font-size: 15.5px;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+
+    .info-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14.5px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .bullet-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .bullet {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: 15.5px;
+      font-weight: 500;
+    }
+
+    .bullet-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--dark);
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-panel {
+      background: var(--dark);
+      color: #ffffff;
+      padding: 30px;
+      margin-top: 8px;
+      margin-bottom: 22px;
+      box-shadow: 0 22px 55px rgba(17, 24, 39, 0.2);
+    }
+
+    .contact-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      background: var(--accent);
+      color: var(--dark);
+      display: grid;
+      place-items: center;
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .contact-panel h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .contact-panel p {
+      color: #d1d5db;
+    }
+
+    .email-button {
+      margin-top: 18px;
+      display: inline-flex;
+      gap: 14px;
+      background: var(--accent);
+      color: var(--dark);
+      border-radius: 16px;
+      padding: 14px 16px;
+      font-size: 14px;
+      font-weight: 900;
+      max-width: 100%;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 800;
+      padding: 10px 0 0;
+    }
+
+    @media (max-width: 780px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .operator-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        padding: 16px 12px 44px;
+      }
+
+      .topbar {
+        border-radius: 18px;
+        padding: 12px;
+      }
+
+      .topbar-mail {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        font-size: 0;
+      }
+
+      .topbar-mail::after {
+        content: "✉";
+        font-size: 18px;
+      }
+
+      .hero {
+        padding: 28px 20px;
+        border-radius: 22px;
+      }
+
+      .hero-icon {
+        width: 58px;
+        height: 58px;
+        border-radius: 17px;
+        font-size: 27px;
+      }
+
+      .hero-badge {
+        font-size: 12px;
+        padding: 8px 11px;
+      }
+
+      .operator-card,
+      .section,
+      .contact-panel {
+        padding: 22px 18px;
+        border-radius: 18px;
+      }
+
+      .section-header {
+        align-items: flex-start;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .info-card {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">B</div>
+        <div>
+          <div class="brand-title">BuzzMate</div>
+          <div class="brand-subtitle">Privacy Policy</div>
+        </div>
+      </div>
+
+      <a class="topbar-mail" href="mailto:zaroopankajbm@gmail.com">Contact</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-top">
+        <div class="hero-icon" aria-hidden="true">🛡️</div>
+        <div class="hero-badge">Updated June 2026</div>
+      </div>
+
+      <h1>Privacy built around trust.</h1>
+
+      <p class="hero-text">
+        This policy explains how BuzzMate collects, uses, stores, protects and shares information when you use our social travel and chatting app.
+      </p>
+
+      <div class="trust-row">
+        <span class="trust-chip">🔒 Secure Handling</span>
+        <span class="trust-chip">👁 Clear Disclosure</span>
+        <span class="trust-chip">👤 User Control</span>
+      </div>
+    </section>
+
+    <section class="operator-card">
+      <div class="operator-top">
+        <div>
+          <div class="operator-title">App Operator</div>
+          <div class="operator-subtitle">Official privacy contact details</div>
+        </div>
+
+        <div class="operator-icon" aria-hidden="true">🏢</div>
+      </div>
+
+      <div class="operator-box">
+        <div class="operator-row">
+          <div class="operator-label">App Name</div>
+          <div class="operator-value">BuzzMate</div>
+        </div>
+        <div class="operator-row">
+          <div class="operator-label">App Owner</div>
+          <div class="operator-value">Pankaj Zaroo</div>
+        </div>
+        <div class="operator-row">
+          <div class="operator-label">Developer / Technical Contact</div>
+          <div class="operator-value">Abhishek Bhardwaj</div>
+        </div>
+        <div class="operator-row">
+          <div class="operator-label">Country</div>
+          <div class="operator-value">India</div>
+        </div>
+        <div class="operator-row">
+          <div class="operator-label">Privacy Contact Email</div>
+          <div class="operator-value">
+            <a href="mailto:zaroopankajbm@gmail.com">zaroopankajbm@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">01</div><h2>Introduction</h2></div>
+      <p>BuzzMate is a social travel and chatting app that helps users connect with people travelling on the same train or similar route. This Privacy Policy applies to all users who create an account, browse profiles, chat, follow users, upload posts, interact with content, use notifications or use travel-related features inside BuzzMate.</p>
+      <p>By using BuzzMate, you agree to the collection and use of information as described in this Privacy Policy.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">02</div><h2>Information We Collect</h2></div>
+      <p>We may collect information that you provide directly, information created when you use the app and technical information needed to run app features properly.</p>
+
+      <div class="info-grid">
+        <div class="info-card"><div class="info-icon">👤</div><div><strong>Profile Information</strong><span>Name, username, profile photo, gender, date of birth, bio and other profile details you choose to add.</span></div></div>
+        <div class="info-card"><div class="info-icon">✉️</div><div><strong>Account Information</strong><span>Email address, login details, user ID and authentication information required to create and manage your account.</span></div></div>
+        <div class="info-card"><div class="info-icon">📍</div><div><strong>Location Information</strong><span>Approximate and precise location may be used for nearby users, travel discovery, route matching and safety-related app functionality.</span></div></div>
+        <div class="info-card"><div class="info-icon">🚆</div><div><strong>Journey Information</strong><span>Train number, source station, destination station, journey date, route or other travel details added by you.</span></div></div>
+        <div class="info-card"><div class="info-icon">📷</div><div><strong>Camera, Photos and Videos</strong><span>Photos or videos you capture or choose from your device for profile photos, posts, chat media or other app features.</span></div></div>
+        <div class="info-card"><div class="info-icon">🎙️</div><div><strong>Audio Information</strong><span>Voice notes or audio recordings when you use microphone-based features such as voice messages.</span></div></div>
+        <div class="info-card"><div class="info-icon">💬</div><div><strong>Messages and Social Content</strong><span>Chats, posts, comments, likes, replies, follow requests, reports, blocks and other content you send or share in the app.</span></div></div>
+        <div class="info-card"><div class="info-icon">📱</div><div><strong>Device and App Data</strong><span>Device information, app version, notification token, device identifiers, diagnostics, crash logs and technical data used to improve performance and security.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">03</div><h2>App Permissions We Use</h2></div>
+      <p>BuzzMate requests permissions only to support app features. Permission access depends on your device settings and your choices.</p>
+      <div class="bullet-list">
+        <div class="bullet"><span class="bullet-check">✓</span><span>Location permission is used for nearby users, route discovery and travel-related matching features.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Camera permission is used to capture photos or videos for profile, posts or chat media.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Photos and media permission is used when you select images or media from your device.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Microphone permission is used for voice messages or audio recording features.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Notification permission is used to send alerts for chats, follow requests, likes, comments, replies, posts and important app updates.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Internet permission is used to connect BuzzMate with online services and deliver app features.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">04</div><h2>How We Use Your Information</h2></div>
+      <p>We use your information to provide, maintain, improve and protect BuzzMate.</p>
+      <div class="bullet-list">
+        <div class="bullet"><span class="bullet-check">✓</span><span>Create and manage your BuzzMate account.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Show your profile and content according to app features.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Help users discover matching travellers, nearby profiles or route-based connections.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Enable chat, media sharing, follow requests, posts, likes, comments, reports and notifications.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Send important app notifications and safety-related alerts.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Improve app safety, prevent abuse, detect fake accounts and review reports.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Fix bugs, improve performance and develop new features.</span></div>
+      </div>
+    </section>
+
+    <section class="section"><div class="section-header"><div class="section-number">05</div><h2>Location and Travel Data</h2></div><p>BuzzMate may use location and journey details to provide features such as nearby users, same train discovery, route matching and travel-related connections.</p><p>You should only add correct journey details. Do not share sensitive personal information such as home address, OTP, passwords, bank details, private documents or private photos with unknown users.</p></section>
+
+    <section class="section"><div class="section-header"><div class="section-number">06</div><h2>Chats, Posts and Public Content</h2></div><p>Content you share through BuzzMate may be visible depending on the feature. For example, your profile, posts, comments, likes, follow activity and public interactions may be visible to other users according to app design.</p><p>Chat messages and media are used to provide messaging features between users. You are responsible for the messages and content you send. Do not send abusive, illegal, harmful, private or unsafe content.</p></section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">07</div><h2>Reports, Blocking and Safety</h2></div>
+      <p>If you report a user, block a user or submit a safety complaint, BuzzMate may store related information to review the issue and take action.</p>
+      <div class="bullet-list">
+        <div class="bullet"><span class="bullet-check">✓</span><span>Reports may include user IDs, reason, message details, screenshots or related content.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Blocked user data may be stored to prevent unwanted interaction.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Accounts violating safety rules may be restricted, suspended or permanently banned.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>Repeated valid reports may lead to permanent account action based on severity.</span></div>
+      </div>
+    </section>
+
+    <section class="section"><div class="section-header"><div class="section-number">08</div><h2>Notifications</h2></div><p>BuzzMate may use notification tokens to send push notifications for chats, follow requests, likes, comments, replies, posts, safety alerts and important app updates.</p><p>Routine app notifications may be automatically and permanently deleted after 30 days.</p><p>You can control notification permission from your device settings.</p></section>
+
+    <section class="section"><div class="section-header"><div class="section-number">09</div><h2>Service Providers and Backend Services</h2></div><p>BuzzMate uses trusted cloud, backend, database, storage, authentication, notification, diagnostics and performance service providers to operate app features securely.</p><p>We do not publicly disclose backend configuration, project IDs, database URLs, storage bucket paths, security rules, API keys or internal server details in this Privacy Policy.</p><p>These service providers may process limited data only as needed to provide app functionality, security, storage, notifications and performance monitoring.</p></section>
+
+    <section class="section"><div class="section-header"><div class="section-number">10</div><h2>Third-Party Links and Railway Services</h2></div><p>BuzzMate may provide access or navigation to railway-related websites or third-party services such as booking, PNR status, train status, train location or similar travel services.</p><p>BuzzMate does not control third-party websites, bookings, payments, cancellations, refunds, railway schedules, railway services or external platform privacy practices. When you open a third-party service, their own terms and privacy policy apply.</p></section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">11</div><h2>Data Sharing</h2></div>
+      <p>BuzzMate does not sell your personal information. We may share limited data only when required to provide app features, protect users, comply with law or operate trusted technical services.</p>
+      <div class="bullet-list">
+        <div class="bullet"><span class="bullet-check">✓</span><span>With other users, according to profile, chat, post, follow and travel discovery features.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>With service providers who help run app features securely.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>When required by law, legal process, safety investigation or government request.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>To prevent fraud, abuse, harassment, spam, security issues or illegal activity.</span></div>
+      </div>
+    </section>
+
+    <section class="section"><div class="section-header"><div class="section-number">12</div><h2>Data Storage and Security</h2></div><p>We use reasonable technical and organizational measures to protect user data. However, no online platform, app or internet-based service can guarantee 100% security.</p><p>Users should keep their login details safe, avoid sharing sensitive personal information and immediately report any suspicious activity or account misuse.</p></section>
+
+    <section class="section"><div class="section-header"><div class="section-number">13</div><h2>Data Retention</h2></div><p>Routine app notifications may be automatically and permanently deleted after 30 days.</p><p>Posts, comments, replies or other user content may be hidden, marked as deleted, disabled or removed from public view when a user deletes them or when required for safety and moderation. Some deleted content may not be immediately or permanently erased from our systems.</p><p>BuzzMate may keep your information for as long as your account is active or as needed to provide app features, resolve disputes, enforce rules, prevent abuse or comply with legal requirements.</p><p>Some data such as reports, ban records, safety logs, abuse-related records, fraud prevention records, deleted-content records or legal records may be retained for longer to protect the platform and users.</p></section>
+
+    <section class="section">
+      <div class="section-header"><div class="section-number">14</div><h2>Your Choices and Controls</h2></div>
+      <p>You may control or update some of your information inside the app or through your device settings.</p>
+      <div class="bullet-list">
+        <div class="bullet"><span class="bullet-check">✓</span><span>You can edit your profile information.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>You can delete or update posts where app features allow it.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>You can block or report users.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>You can manage camera, microphone, location, media and notification permissions from your device settings.</span></div>
+        <div class="bullet"><span class="bullet-check">✓</span><span>You can contact support for privacy-related requests.</span></div>
+      </div>
+    </section>
+
+    <section class="section"><div class="section-header"><div class="section-number">15</div><h2>Children’s Privacy</h2></div><p>BuzzMate is not intended for children below the minimum age required by applicable law. Users should not create an account if they are not legally allowed to use social or communication apps in their region.</p><p>If we find that an underage user has created an account, we may restrict or remove that account.</p></section>
+
+    <section class="section"><div class="section-header"><div class="section-number">16</div><h2>Account Deletion and Data Requests</h2></div><p>If you want to delete your account or request removal of your data, you can contact BuzzMate support using the email below.</p><p>Some information may still be retained if required for safety, legal compliance, fraud prevention, dispute resolution, abuse prevention or enforcement of app rules.</p></section>
+
+    <section class="section"><div class="section-header"><div class="section-number">17</div><h2>Changes to This Privacy Policy</h2></div><p>BuzzMate may update this Privacy Policy from time to time. If we make changes, we may update the “Last updated” date. Continued use of the app means you accept the updated Privacy Policy.</p></section>
+
+    <section class="contact-panel">
+      <div class="contact-icon" aria-hidden="true">✉️</div>
+      <h2>Need privacy help?</h2>
+      <p>For privacy questions, account concerns, data requests or safety issues, contact BuzzMate support.</p>
+      <a class="email-button" href="mailto:zaroopankajbm@gmail.com">
+        zaroopankajbm@gmail.com <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <footer class="footer">© 2026 BuzzMate. All rights reserved.</footer>
+  </main>
+</body>
+</html>
